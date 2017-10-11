@@ -1,0 +1,47 @@
+<ion-view title="Settings" id="page3">
+  <ion-nav-buttons side="right" class="has-header">
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header" scroll="false">
+    <form id="settings-form4" name="form4" class="list">
+      <ion-list id="settings-list5">
+        
+        <label class="item item-input"  name="firstName">
+          <span class="input-label">First Name</span>
+          <input type="text" ng-model="update.firstName" id="settings-first" placeholder="First Name">
+        </label>
+
+        <label class="item item-input" name="lastName">
+          <span class="input-label">Last Name</span>
+          <input type="text" ng-model="update.lastName" id="settings-last" placeholder="Last Name">
+        </label>
+
+        <label class="item item-input" name="age">
+          <span class="input-label">Age</span>
+          <input type="number" ng-model="update.age" id="settings-age" placeholder="20">
+        </label>
+
+        <label class="item item-input" name="country">
+          <span class="input-label">Country</span>
+          <input type="text" ng-model="update.country" id="settings-country" placeholder="Country">
+        </label>
+
+        <label class="item item-select" id="settings-education" name="educationList">
+          <span class="input-label">Education</span>
+          <select ng-model="update.education" required>
+            <option disabled selected value="">Education Level</option>
+            <option value="Elementary">Elementary</option>
+            <option value="High School">High School</option>
+            <option value="Post Secondary">Post Secondary</option>
+          </select>
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input ng-minlength="6" type="password" ng-model="update.password" id="settings-password"  placeholder="Must Be 6 Characters">
+        </label>
+
+      </ion-list>
+      <button ng-click="updateInfo(update)" class="button button-stable button-block button-positive">Update Info</button>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,42 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content drag-content="false">
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="side-menu21"></ion-nav-view>
+  </ion-side-menu-content>
+  
+  <ion-side-menu side="left" id="side-menu21">
+    <ion-header-bar class="bar-stable">
+      <div class="title">Menu</div>
+    </ion-header-bar>
+
+    <ion-content padding="false" class="side-menu-left has-header ">
+      <ion-list id="menu-list1">
+        <ion-item class="item-icon-right" id="menu-list-item1" ui-sref="menu.graph" menu-close="">Graph
+          <span class="item-note">graph a function</span>
+          <i class="icon ion-arrow-graph-up-right"></i>
+        </ion-item>
+
+        <ion-item class="item-icon-right" id="menu-list-item2"  ui-sref="menu.flashCards" menu-close="">Flash Cards
+          <span class="item-note">Practice Quiz</span>
+          <i class="icon ion-flash"></i>
+        </ion-item>
+
+        <ion-item class="item-icon-right" id="menu-list-item3" ng-click="recall()" ui-sref="menu.settings" menu-close="">Settings
+          <span class="item-note">Edit your info</span>
+          <i class="icon ion-gear-b"></i>
+        </ion-item>
+
+        <ion-item class="item-icon-right" id="menu-list-item4" ng-click="presentActionSheet()" menu-close="">Log Out
+          <span class="item-note">log out</span>
+          <i class="icon ion-log-out"></i>
+        </ion-item>
+        
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

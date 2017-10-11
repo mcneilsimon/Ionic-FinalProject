@@ -1,0 +1,44 @@
+<ion-view title="Flash Cards" id="page2">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button icon ion-arrow-graph-up-right" ng-click="multiQuiz()">Start Quiz</button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <div class="item item-body" id="flashCards-list-item-container3">
+
+      <ion-list id="flashCards-list7">
+        <ion-item id="question1"><strong>Question 1: 3*4</strong>
+          <input type="text" id="answer1" placeholder="Input Answer"></input>
+          <ion-item  ng-if="show" id="flashCards-list-item15">Answer: 12 </ion-item>
+          <ion-option-button ng-click="show = true;" class="button-calm">Answer</ion-option-button>
+      </ion-list>
+    </div>
+
+    <div class="item item-body" id="flashCards-list-item-container4">
+      <ion-list id="flashCards-list8">
+        <ion-item id="question2"><strong>Question 2: 2+7</strong>
+        <input type="text" id="answer2" placeholder="Input Answer"></input>
+        <ion-item ng-if="show" id="flashCards-list-item17">Answer: 9 </ion-item>
+          <ion-option-button ng-click="show = true;" class="button-calm">Answer</ion-option-button>
+      </ion-list>
+    </div>
+
+    <div class="item item-body" id="flashCards-list-item-container5">
+      <ion-list id="flashCards-list9">
+        <ion-item id="question3"><strong>Question 3: 7%3</strong>
+        <input type="text" id="answer3" placeholder="Input Answer"></input>
+        <ion-item ng-if="show" id="flashCards-list-item19">Answer: 1</ion-item>
+          <ion-option-button  ng-click="show = true;" class="button-calm">Answer</ion-option-button>
+    </div>
+
+    <div class="item item-body" id="flashCards-list-item-container5">
+      <ion-list id="flashCards-list9">
+        <ion-item id="question4"><strong>Question 4: 8*90</strong>
+        <input type="text" id="answer4" placeholder="Input Answer"></input>
+        <ion-item ng-if="show" id="flashCards-list-item19">Answer: 720</ion-item>
+          <ion-option-button ng-click="show = true;" class="button-calm">Answer</ion-option-button>
+      </ion-list>
+    </div>
+
+    
+  </ion-content>
+</ion-view>

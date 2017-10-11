@@ -1,0 +1,19 @@
+<ion-view title="Login" id="page4">
+  <ion-content padding="true" class="has-header" scroll="false">
+    <form id="login-form1" name="myForm" novalidate class="list">
+      <ion-list id="login-list2">
+        <label class="item item-input" id="login-input1">
+          <span class="input-label">Username</span>
+          <input type="text" ng-minglength="5" ng-model="login.userName" placeholder="Enter Username" required>
+        </label>
+        <label class="item item-input" id="login-input2">
+          <span class="input-label">Password</span>
+          <input type="password" ng-minglength="5" ng-model="login.password" placeholder="Enter Password" required>
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <button id="login-button1" ng-click="checkUser(login)" ng-disabled="myForm.$invalid" class="button button-stable button-block button-positive ">Log in</button>
+      <a ui-sref="signup" id="login-button2" class="button button-positive  button-block button-clear">Create An Account</a>
+    </form>
+  </ion-content>
+</ion-view>
